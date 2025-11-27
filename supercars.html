@@ -98,12 +98,7 @@
   </div>
 
 <script>
-// Fixed, robust single-file site. Key fixes made here:
-// - cars array always provides `title`, `cat`, `img` and `full` fields
-// - render() uses item.title (guaranteed) and item.img/item.full instead of undefined props
-// - search/filter safely checks properties before calling toLowerCase()
 
-// Build 100 car entries with real names and stable image sources (loremflickr with lock ensures consistent photos)
 const carNames = [
   'Lamborghini Aventador','Lamborghini Huracán STO','Lamborghini Sian','Ferrari 488 GTB','Ferrari F8 Tributo','Ferrari SF90 Stradale','Ferrari LaFerrari','Porsche 911 Turbo S','Porsche 911 GT3 RS','Porsche Cayman GT4','McLaren 720S','McLaren Senna','McLaren P1','Bugatti Chiron','Bugatti Veyron','Koenigsegg Jesko','Koenigsegg Agera RS','Pagani Huayra','Pagani Zonda','Rimac Nevera',
   'Nissan GT-R R35','Nissan Skyline GT-R R34','Toyota Supra MK4','Toyota Supra MK5','Mazda RX-7 FD','Mazda RX-8','Honda NSX','Acura NSX','Subaru WRX STI','Mitsubishi Lancer Evolution',
@@ -260,3 +255,4 @@ document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape' && modal) moda
   </script>
 </body>
 </html>
+
